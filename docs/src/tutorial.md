@@ -100,7 +100,7 @@ Lets assume that the car from our last example is an electric vehicle. Electric 
 
 We can model this with an additional charge process for our car. Therefore, we redefine our `car` process function and add a `charge` process function.
 
-A new charge process is started every time the vehicle starts parking. By yielding the `Process` instance that the `@process` macro returns, the `run` process starts waiting for it to finish:
+A new charge process is started every time the vehicle starts charging. By yielding the `Process` instance that the `@process` macro returns, the `run` process starts waiting for it to finish:
 
 ```jldoctest
 julia> using ResumableFunctions
